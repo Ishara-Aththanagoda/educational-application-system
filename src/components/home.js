@@ -1,4 +1,4 @@
-import React, { useEffect, useRef} from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './home.css';
 
@@ -25,20 +25,21 @@ const Home = () => {
         <div className="home-container">
             {/* Background Video */}
             <video ref={videoRef} autoPlay loop playsInline id="background-video">
-                <source src="/s.mp4" type="video/mp4" />
+                <source src="/si.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 
             {/* Content */}
             <div className="content">
-                <h1 className="animated-text">සාදරයෙන් පිළිගනිමු</h1>
+                <h1 className="animated-text">ර/බල පුවක්ගහවෙල විද්‍යාලය
+                    සාදරයෙන් පිළිගනිමු!</h1>
                 <p className="k">
                     Warmly Welcome to our website, where learning blossoms and every step inspires success!
                 </p>
                 <button className="get-started-btn" onClick={() => navigate('/feature')}>
                     Let's go!
                 </button>
-            
+
             </div>
         </div>
     );
